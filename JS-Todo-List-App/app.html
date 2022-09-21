@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.css" />
 
-    <title>Todos</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="app.css" />
 
-  <body>
-    <section>
-      <div class="container">
-        <h1>Welcome Todos</h1>
-        <input type="text" id="search" class="search" value="" />
-        <button type="button" id="fetch" value="FETCH ALL">FETCH ALL</button>
-        <div class="dropdown">
-          <button class="dropbtn">OPTIONS</button>
-          <div class="dropdown-content-filter">
-            <a href="#" class="filter-records" onclick="filterRecords('all')"
-              >all</a
-            >
-            <a
-              href="#"
-              class="filter-records"
-              onclick="filterRecords('completed')"
-              >completed</a
-            >
-            <a
-              href="#"
-              class="filter-records"
-              onclick="filterRecords('not-completed')"
-              >not completed</a
-            >
-          </div>
-        </div>
-      </div>
-      <div id="todo_container"></div>
-    </section>
-    <script src="app.js"></script>
-  </body>
+  <title>Todos</title>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <h1>Welcome Todos</h1>
+      <input type="text" id="search" class="search" value="" />
+      <button type="button" id="fetch" value="FETCH ALL">FETCH ALL</button>
+      <select id="select">
+        <option value="all">all</option>
+        <option value="completed">completed</span>
+        <option value="not completed">not completed</span>
+      </select>
+    </div>
+    <div id="todo_container"></div>
+  </section>
+  <script src="app.js"></script>
+</body>
+
 </html>
